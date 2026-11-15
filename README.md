@@ -6,7 +6,7 @@ Notify Scout catches Windows notifications and pop-up windows, tells you exactly
 
 ## Download
 
-**[⬇ Download Notify Scout (latest)](https://github.com/Dialsoft/notifyscout-releases/raw/main/NotifyScout.exe)**. Current version: **1.2.0** (2026-11-15)
+**[⬇ Download Notify Scout (latest)](https://github.com/Dialsoft/notifyscout-releases/raw/main/NotifyScout.exe)**. Current version: **1.3.0** (2026-11-15)
 
 - A single program file with nothing to install. Just double-click it.
 - For Windows 10 and 11 (64-bit).
@@ -15,13 +15,13 @@ Notify Scout catches Windows notifications and pop-up windows, tells you exactly
 
 Notify Scout checks this page when it starts and every 6 hours, and offers new versions with an **Update now** button. Every download is verified against the SHA-256 checksum in `latest.json` before it installs.
 
-## What's new in 1.2.0
+## What's new in 1.3.0
 
-- New Website Cleanup (Home tab, the Simple View page, and the tray icon's menu): lists every website allowed to send you notifications in Chrome, Edge and Brave, across all browser profiles, without waiting for one to pop up.
-- Junk detection: Notify Scout checks each website's name and marks the suspicious ones (random-letter names, cheap throw-away endings such as .xyz or .top, bait words such as push, alert or prize, or notifications that used fake-virus wording). Suspicious websites are ticked for you; one click blocks them all.
-- The banner turns orange when suspicious websites are allowed to notify you, and Notify Scout tells you when a new website is given permission while it is running.
-- New Close Browsers button (also in the tray icon's menu): the escape hatch for a fake virus warning that has taken over the whole screen.
-- Suspicious websites are shown in red in the lists, with the reasons spelled out in Details.
+- Simpler and safer out of the box: Notify Scout now watches website notifications in Chrome, Edge and Brave only. App notifications and pop-up windows from programs are off until you turn them on.
+- New Settings page: click the Settings tab for a full page of options, each with a plain-English description. Every change still takes effect immediately.
+- The everyday Home tab has just four buttons: Website Cleanup, Close Browsers, Pause and Exit. Nothing on it can stop a program from working.
+- Expert tools (Turn Off for any source, End Program, Run as Admin, the full lists and more) are hidden until you tick "Show expert tools" on the Settings page.
+- If you used an earlier version: app notifications and pop-up windows are now off by default. Tick them on the Settings page to get them back. Pop-ups you already blocked stay blocked.
 
 See [CHANGELOG.md](CHANGELOG.md) for every version.
 
@@ -30,6 +30,20 @@ See [CHANGELOG.md](CHANGELOG.md) for every version.
 Notify Scout answers one question: **"What just popped up, and how do I make it stop?"**
 
 It is a single file, `NotifyScout.exe`. There is nothing to install. Double-click it to start.
+
+### What it watches out of the box
+
+To keep things simple and safe, Notify Scout starts by watching **website notifications in Chrome, Edge and Brave only**. That is where nearly all junk notifications and fake virus warnings come from. The Home tab has four buttons: **Website Cleanup**, **Close Browsers**, **Pause** and **Exit**. None of them can stop a program from working.
+
+Everything else is on the **Settings** tab, which shows a full page of options:
+
+| Option | Default | What it adds |
+|---|---|---|
+| App notifications | Off | Also catches notifications from apps installed on the PC (Outlook, Teams, antivirus and so on) and lets you switch an app's notifications off. |
+| Pop-up windows from programs | Off | Also catches windows that programs open by themselves, including ones that flash open and shut. For people who know Windows. |
+| Show expert tools | Off | Adds the full lists and the Home tab buttons that can stop programs from working: Turn Off for anything, End Program, Run as Admin and more. |
+
+The sections below about pop-up windows, the expert view and the bottom list apply once those options are switched on.
 
 ### The quick way: Simple View
 

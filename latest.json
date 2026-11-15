@@ -1,8 +1,8 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "published": "2026-11-15",
-  "notes": "• New Website Cleanup (Home tab, the Simple View page, and the tray icon's menu): lists every website allowed to send you notifications in Chrome, Edge and Brave, across all browser profiles, without waiting for one to pop up.\n• Junk detection: Notify Scout checks each website's name and marks the suspicious ones (random-letter names, cheap throw-away endings such as .xyz or .top, bait words such as push, alert or prize, or notifications that used fake-virus wording). Suspicious websites are ticked for you; one click blocks them all.\n• The banner turns orange when suspicious websites are allowed to notify you, and Notify Scout tells you when a new website is given permission while it is running.\n• New Close Browsers button (also in the tray icon's menu): the escape hatch for a fake virus warning that has taken over the whole screen.\n• Suspicious websites are shown in red in the lists, with the reasons spelled out in Details.",
+  "notes": "• Simpler and safer out of the box: Notify Scout now watches website notifications in Chrome, Edge and Brave only. App notifications and pop-up windows from programs are off until you turn them on.\n• New Settings page: click the Settings tab for a full page of options, each with a plain-English description. Every change still takes effect immediately.\n• The everyday Home tab has just four buttons: Website Cleanup, Close Browsers, Pause and Exit. Nothing on it can stop a program from working.\n• Expert tools (Turn Off for any source, End Program, Run as Admin, the full lists and more) are hidden until you tick \"Show expert tools\" on the Settings page.\n• If you used an earlier version: app notifications and pop-up windows are now off by default. Tick them on the Settings page to get them back. Pop-ups you already blocked stay blocked.",
   "exe": "https://raw.githubusercontent.com/Dialsoft/notifyscout-releases/main/NotifyScout.exe",
-  "sha256": "6a280c5ab02e4f374d445f1fa05522ebb4610fcf3677cc781c7f958e766a2a0d",
-  "size": 369664
+  "sha256": "3fe8af947771947b4499755562e94a9ff682591242e432aa88ec2f9c6cf72dee",
+  "size": 381952
 }

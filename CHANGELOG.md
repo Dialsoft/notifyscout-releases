@@ -1,5 +1,12 @@
 # Notify Scout release notes
 
+## 1.3.0 (2026-11-15)
+- Simpler and safer out of the box: Notify Scout now watches website notifications in Chrome, Edge and Brave only. App notifications and pop-up windows from programs are off until you turn them on.
+- New Settings page: click the Settings tab for a full page of options, each with a plain-English description. Every change still takes effect immediately.
+- The everyday Home tab has just four buttons: Website Cleanup, Close Browsers, Pause and Exit. Nothing on it can stop a program from working.
+- Expert tools (Turn Off for any source, End Program, Run as Admin, the full lists and more) are hidden until you tick "Show expert tools" on the Settings page.
+- If you used an earlier version: app notifications and pop-up windows are now off by default. Tick them on the Settings page to get them back. Pop-ups you already blocked stay blocked.
+
 ## 1.2.0 (2026-11-15)
 - New Website Cleanup (Home tab, the Simple View page, and the tray icon's menu): lists every website allowed to send you notifications in Chrome, Edge and Brave, across all browser profiles, without waiting for one to pop up.
 - Junk detection: Notify Scout checks each website's name and marks the suspicious ones (random-letter names, cheap throw-away endings such as .xyz or .top, bait words such as push, alert or prize, or notifications that used fake-virus wording). Suspicious websites are ticked for you; one click blocks them all.
