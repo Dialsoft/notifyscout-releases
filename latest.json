@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "published": "2026-11-15",
+  "notes": "• First release. Catches Windows notifications (the banners at the corner of the screen) and shows which app sent each one and what it said.\n• Catches pop-up windows from any program, including windows that flash for a split second, with the program file, the exact command line, what started it, and how long it stayed on screen.\n• Turn Off: silences a Windows notification app using Windows' own switch, or makes Notify Scout close a pop-up window the instant it appears. Turn On undoes it.\n• Lists every app allowed to send Windows notifications so you can switch any of them off without waiting for it to appear.\n• Details gives plain-English advice on stopping the source at the root: Task Scheduler, a service, a startup item, or a website's permission in your browser.\n• Keeps watching from the icon next to the clock when you close the window, can start with Windows, and writes everything it catches to a log file.\n• Run as Admin for programs Windows otherwise hides, Save Report, automatic updates, Share tab, and detailed tooltips on every control.",
+  "exe": "https://raw.githubusercontent.com/Dialsoft/notifyscout-releases/main/NotifyScout.exe",
+  "sha256": "a81efdc9a3d65504070c9aebdb92d081e4aac2b78b3ebca84e59dce45cdf52f9",
+  "size": 309760
+}
