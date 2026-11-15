@@ -6,7 +6,7 @@ Notify Scout catches Windows notifications and pop-up windows, tells you exactly
 
 ## Download
 
-**[⬇ Download Notify Scout (latest)](https://github.com/Dialsoft/notifyscout-releases/raw/main/NotifyScout.exe)**. Current version: **1.1.0** (2026-11-15)
+**[⬇ Download Notify Scout (latest)](https://github.com/Dialsoft/notifyscout-releases/raw/main/NotifyScout.exe)**. Current version: **1.2.0** (2026-11-15)
 
 - A single program file with nothing to install. Just double-click it.
 - For Windows 10 and 11 (64-bit).
@@ -15,12 +15,13 @@ Notify Scout catches Windows notifications and pop-up windows, tells you exactly
 
 Notify Scout checks this page when it starts and every 6 hours, and offers new versions with an **Update now** button. Every download is verified against the SHA-256 checksum in `latest.json` before it installs.
 
-## What's new in 1.1.0
+## What's new in 1.2.0
 
-- New Simple View (now the default): one big page showing the last thing that popped up, who sent it and what it said, with one button to stop it. Earlier and Later buttons walk through everything caught. Click Simple View on the Home tab to switch to the full lists and back.
-- New "Want it stopped?" prompt: the moment a notification or pop-up is caught, a small window appears at the top-right corner with Stop these and Leave it alone buttons. It goes away by itself after 30 seconds and can be switched off on the Settings tab.
-- Website notifications: when a notification comes through Chrome, Edge or Brave, Notify Scout now names the website that sent it (for example finance.yahoo.com) and can block just that one website, without silencing the whole browser.
-- Websites already blocked in the browser are listed with the other sources and can be turned back on.
+- New Website Cleanup (Home tab, the Simple View page, and the tray icon's menu): lists every website allowed to send you notifications in Chrome, Edge and Brave, across all browser profiles, without waiting for one to pop up.
+- Junk detection: Notify Scout checks each website's name and marks the suspicious ones (random-letter names, cheap throw-away endings such as .xyz or .top, bait words such as push, alert or prize, or notifications that used fake-virus wording). Suspicious websites are ticked for you; one click blocks them all.
+- The banner turns orange when suspicious websites are allowed to notify you, and Notify Scout tells you when a new website is given permission while it is running.
+- New Close Browsers button (also in the tray icon's menu): the escape hatch for a fake virus warning that has taken over the whole screen.
+- Suspicious websites are shown in red in the lists, with the reasons spelled out in Details.
 
 See [CHANGELOG.md](CHANGELOG.md) for every version.
 
@@ -52,6 +53,32 @@ If the notification came through Chrome, Edge or Brave, Notify Scout names the *
 - The same button turns the website back on.
 
 Firefox has no such list, so for Firefox only the whole browser can be turned off.
+
+### Website Cleanup: getting rid of junk and scam websites
+
+Most junk notifications, including fake "virus" warnings, come from a website that was given permission to notify you. Often that happened by clicking "Allow" on a pop-up without meaning to.
+
+Click **Website Cleanup** on the Home tab (or **Check my browsers for junk websites** on the Simple View page). You get a list of every website allowed to send you notifications in Chrome, Edge and Brave. You don't have to wait for one to pop up.
+
+Notify Scout checks each name and marks the suspicious ones in red. They are already ticked. It calls a website suspicious when:
+
+- its name is random letters rather than a real word
+- it uses a cheap throw-away ending such as .xyz, .top or .click
+- its name contains a bait word such as push, alert, prize or virus
+- one of its notifications used fake-virus, expired-subscription or prize wording
+
+This is a judgment call, not proof. Look the list over, untick anything you recognize and want to keep, tick any others you don't want, then click **Block the ticked websites**. Blocking only stops notifications; you can still visit the website.
+
+When suspicious websites are allowed to notify you, the banner at the top of Notify Scout turns orange and says how many.
+
+#### If a fake virus warning takes over the whole screen
+
+Those warnings are never real. Never call a phone number shown on one.
+
+1. Press the **Windows key** to bring up the taskbar.
+2. Right-click the Notify Scout icon next to the clock and choose **Close all web browsers**. (The same button is on the Home tab as **Close Browsers**.)
+3. When you open the browser again, do **not** click "Restore pages".
+4. Open **Website Cleanup** and block the website that caused it.
 
 Click **Simple View** on the Home tab to switch to the expert view (the full lists described below) and back.
 

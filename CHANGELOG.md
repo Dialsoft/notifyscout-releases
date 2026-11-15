@@ -1,5 +1,12 @@
 # Notify Scout release notes
 
+## 1.2.0 (2026-11-15)
+- New Website Cleanup (Home tab, the Simple View page, and the tray icon's menu): lists every website allowed to send you notifications in Chrome, Edge and Brave, across all browser profiles, without waiting for one to pop up.
+- Junk detection: Notify Scout checks each website's name and marks the suspicious ones (random-letter names, cheap throw-away endings such as .xyz or .top, bait words such as push, alert or prize, or notifications that used fake-virus wording). Suspicious websites are ticked for you; one click blocks them all.
+- The banner turns orange when suspicious websites are allowed to notify you, and Notify Scout tells you when a new website is given permission while it is running.
+- New Close Browsers button (also in the tray icon's menu): the escape hatch for a fake virus warning that has taken over the whole screen.
+- Suspicious websites are shown in red in the lists, with the reasons spelled out in Details.
+
 ## 1.1.0 (2026-11-15)
 - New Simple View (now the default): one big page showing the last thing that popped up, who sent it and what it said, with one button to stop it. Earlier and Later buttons walk through everything caught. Click Simple View on the Home tab to switch to the full lists and back.
 - New "Want it stopped?" prompt: the moment a notification or pop-up is caught, a small window appears at the top-right corner with Stop these and Leave it alone buttons. It goes away by itself after 30 seconds and can be switched off on the Settings tab.
