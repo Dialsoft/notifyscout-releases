@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "published": "2026-11-15",
-  "notes": "• First release. Catches Windows notifications (the banners at the corner of the screen) and shows which app sent each one and what it said.\n• Catches pop-up windows from any program, including windows that flash for a split second, with the program file, the exact command line, what started it, and how long it stayed on screen.\n• Turn Off: silences a Windows notification app using Windows' own switch, or makes Notify Scout close a pop-up window the instant it appears. Turn On undoes it.\n• Lists every app allowed to send Windows notifications so you can switch any of them off without waiting for it to appear.\n• Details gives plain-English advice on stopping the source at the root: Task Scheduler, a service, a startup item, or a website's permission in your browser.\n• Keeps watching from the icon next to the clock when you close the window, can start with Windows, and writes everything it catches to a log file.\n• Run as Admin for programs Windows otherwise hides, Save Report, automatic updates, Share tab, and detailed tooltips on every control.",
+  "notes": "• New Simple View (now the default): one big page showing the last thing that popped up, who sent it and what it said, with one button to stop it. Earlier and Later buttons walk through everything caught. Click Simple View on the Home tab to switch to the full lists and back.\n• New \"Want it stopped?\" prompt: the moment a notification or pop-up is caught, a small window appears at the top-right corner with Stop these and Leave it alone buttons. It goes away by itself after 30 seconds and can be switched off on the Settings tab.\n• Website notifications: when a notification comes through Chrome, Edge or Brave, Notify Scout now names the website that sent it (for example finance.yahoo.com) and can block just that one website, without silencing the whole browser.\n• Websites already blocked in the browser are listed with the other sources and can be turned back on.",
   "exe": "https://raw.githubusercontent.com/Dialsoft/notifyscout-releases/main/NotifyScout.exe",
-  "sha256": "a81efdc9a3d65504070c9aebdb92d081e4aac2b78b3ebca84e59dce45cdf52f9",
-  "size": 309760
+  "sha256": "1c2af7ad8569b2f9a74cdaf6a7ae1e937751fba7846968a1fd7e2a610a24af0b",
+  "size": 340480
 }

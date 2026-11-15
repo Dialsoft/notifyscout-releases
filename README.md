@@ -6,7 +6,7 @@ Notify Scout catches Windows notifications and pop-up windows, tells you exactly
 
 ## Download
 
-**[⬇ Download Notify Scout (latest)](https://github.com/Dialsoft/notifyscout-releases/raw/main/NotifyScout.exe)**. Current version: **1.0.0** (2026-11-15)
+**[⬇ Download Notify Scout (latest)](https://github.com/Dialsoft/notifyscout-releases/raw/main/NotifyScout.exe)**. Current version: **1.1.0** (2026-11-15)
 
 - A single program file with nothing to install. Just double-click it.
 - For Windows 10 and 11 (64-bit).
@@ -15,15 +15,12 @@ Notify Scout catches Windows notifications and pop-up windows, tells you exactly
 
 Notify Scout checks this page when it starts and every 6 hours, and offers new versions with an **Update now** button. Every download is verified against the SHA-256 checksum in `latest.json` before it installs.
 
-## What's new in 1.0.0
+## What's new in 1.1.0
 
-- First release. Catches Windows notifications (the banners at the corner of the screen) and shows which app sent each one and what it said.
-- Catches pop-up windows from any program, including windows that flash for a split second, with the program file, the exact command line, what started it, and how long it stayed on screen.
-- Turn Off: silences a Windows notification app using Windows' own switch, or makes Notify Scout close a pop-up window the instant it appears. Turn On undoes it.
-- Lists every app allowed to send Windows notifications so you can switch any of them off without waiting for it to appear.
-- Details gives plain-English advice on stopping the source at the root: Task Scheduler, a service, a startup item, or a website's permission in your browser.
-- Keeps watching from the icon next to the clock when you close the window, can start with Windows, and writes everything it catches to a log file.
-- Run as Admin for programs Windows otherwise hides, Save Report, automatic updates, Share tab, and detailed tooltips on every control.
+- New Simple View (now the default): one big page showing the last thing that popped up, who sent it and what it said, with one button to stop it. Earlier and Later buttons walk through everything caught. Click Simple View on the Home tab to switch to the full lists and back.
+- New "Want it stopped?" prompt: the moment a notification or pop-up is caught, a small window appears at the top-right corner with Stop these and Leave it alone buttons. It goes away by itself after 30 seconds and can be switched off on the Settings tab.
+- Website notifications: when a notification comes through Chrome, Edge or Brave, Notify Scout now names the website that sent it (for example finance.yahoo.com) and can block just that one website, without silencing the whole browser.
+- Websites already blocked in the browser are listed with the other sources and can be turned back on.
 
 See [CHANGELOG.md](CHANGELOG.md) for every version.
 
@@ -32,6 +29,31 @@ See [CHANGELOG.md](CHANGELOG.md) for every version.
 Notify Scout answers one question: **"What just popped up, and how do I make it stop?"**
 
 It is a single file, `NotifyScout.exe`. There is nothing to install. Double-click it to start.
+
+### The quick way: Simple View
+
+Notify Scout opens in **Simple View**. It shows one page:
+
+- who sent the last thing that popped up (an app, a program, or a website)
+- what it said
+- a plain-English explanation
+- one big button to stop it
+
+**Earlier one** and **Later one** walk through everything that has been caught. **Tell me more** shows the full details.
+
+When something new pops up, a small Notify Scout window also appears at the top-right corner of the screen with two buttons, **Stop these** and **Leave it alone**. One click and it is dealt with, without opening Notify Scout. It goes away by itself after 30 seconds. You can switch it off with **Ask me when something pops up** on the Settings tab.
+
+#### Website notifications
+
+If the notification came through Chrome, Edge or Brave, Notify Scout names the **website** that sent it, for example finance.yahoo.com. The stop button blocks just that one website. Your other websites and the browser itself are not affected.
+
+- It can take a few minutes to kick in. Closing the browser completely and opening it again makes it immediate.
+- The browser's menu will say "Managed by your organization" afterwards. That is normal. Notify Scout uses the browser's built-in block list, which is one of its policy settings, and the message only means that list exists.
+- The same button turns the website back on.
+
+Firefox has no such list, so for Firefox only the whole browser can be turned off.
+
+Click **Simple View** on the Home tab to switch to the expert view (the full lists described below) and back.
 
 ### The two things it catches
 
@@ -75,7 +97,7 @@ Click the row, then click **Turn Off**. You are always asked to confirm first.
 
 **Turn On** undoes either one.
 
-### If the notification came through a web browser
+#### If the notification came through a web browser
 
 When "From" is Chrome, Edge or Firefox, a *website* was given permission to send notifications. The notification text usually names the site. Turning the browser off in Notify Scout silences every website. To stop just the one site, open the browser and go to Settings > Privacy > Site settings > Notifications, then remove or block it.
 
@@ -93,6 +115,8 @@ When "From" is Chrome, Edge or Firefox, a *website* was given permission to send
 | Keep running when I close the window | On: the X hides the window and Notify Scout keeps watching. Use **Exit** on the Home tab to close it completely. |
 | Start with Windows | Starts Notify Scout quietly next to the clock each time you sign in. Needed for blocked pop-ups to stay blocked after a restart. |
 | Keep a log file | Writes everything caught to a text file with the date and time, so you can look back over days. Open it with Home > Open Log File. |
+| Simple view | One big page with one stop button, instead of the two lists. |
+| Ask me when something pops up | Shows the small "Want it stopped?" window at the top-right corner when something is caught. Untick and re-tick it to be asked again about things you answered "Leave it alone" for. |
 | Always on top | Keeps the Notify Scout window in front. |
 | Check for updates automatically | Checks for a new version at startup and every 6 hours. Nothing installs until you click Update now. |
 
