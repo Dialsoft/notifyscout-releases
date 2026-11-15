@@ -1,5 +1,10 @@
 # Notify Scout release notes
 
+## 1.4.0 (2026-11-15)
+- New History & Undo (Home tab, the Website Cleanup window, and the tray icon's menu): lists everything that is turned off on this PC that Notify Scout can turn back on, with the date and time Notify Scout made each change. Tick any of them and one button puts it back.
+- Every change Notify Scout makes is now recorded, and also written to the log file as a "CHANGE BY NOTIFY SCOUT" line, so there is a permanent trail.
+- When the last blocked website is turned back on, Notify Scout removes its now-empty block list from the browser's settings, so the browser's "Managed by your organization" label goes away again (unless something else on the PC also manages the browser).
+
 ## 1.3.0 (2026-11-15)
 - Simpler and safer out of the box: Notify Scout now watches website notifications in Chrome, Edge and Brave only. App notifications and pop-up windows from programs are off until you turn them on.
 - New Settings page: click the Settings tab for a full page of options, each with a plain-English description. Every change still takes effect immediately.

@@ -6,7 +6,7 @@ Notify Scout catches Windows notifications and pop-up windows, tells you exactly
 
 ## Download
 
-**[⬇ Download Notify Scout (latest)](https://github.com/Dialsoft/notifyscout-releases/raw/main/NotifyScout.exe)**. Current version: **1.3.0** (2026-11-15)
+**[⬇ Download Notify Scout (latest)](https://github.com/Dialsoft/notifyscout-releases/raw/main/NotifyScout.exe)**. Current version: **1.4.0** (2026-11-15)
 
 - A single program file with nothing to install. Just double-click it.
 - For Windows 10 and 11 (64-bit).
@@ -15,13 +15,11 @@ Notify Scout catches Windows notifications and pop-up windows, tells you exactly
 
 Notify Scout checks this page when it starts and every 6 hours, and offers new versions with an **Update now** button. Every download is verified against the SHA-256 checksum in `latest.json` before it installs.
 
-## What's new in 1.3.0
+## What's new in 1.4.0
 
-- Simpler and safer out of the box: Notify Scout now watches website notifications in Chrome, Edge and Brave only. App notifications and pop-up windows from programs are off until you turn them on.
-- New Settings page: click the Settings tab for a full page of options, each with a plain-English description. Every change still takes effect immediately.
-- The everyday Home tab has just four buttons: Website Cleanup, Close Browsers, Pause and Exit. Nothing on it can stop a program from working.
-- Expert tools (Turn Off for any source, End Program, Run as Admin, the full lists and more) are hidden until you tick "Show expert tools" on the Settings page.
-- If you used an earlier version: app notifications and pop-up windows are now off by default. Tick them on the Settings page to get them back. Pop-ups you already blocked stay blocked.
+- New History & Undo (Home tab, the Website Cleanup window, and the tray icon's menu): lists everything that is turned off on this PC that Notify Scout can turn back on, with the date and time Notify Scout made each change. Tick any of them and one button puts it back.
+- Every change Notify Scout makes is now recorded, and also written to the log file as a "CHANGE BY NOTIFY SCOUT" line, so there is a permanent trail.
+- When the last blocked website is turned back on, Notify Scout removes its now-empty block list from the browser's settings, so the browser's "Managed by your organization" label goes away again (unless something else on the PC also manages the browser).
 
 See [CHANGELOG.md](CHANGELOG.md) for every version.
 
@@ -84,6 +82,18 @@ Notify Scout checks each name and marks the suspicious ones in red. They are alr
 This is a judgment call, not proof. Look the list over, untick anything you recognize and want to keep, tick any others you don't want, then click **Block the ticked websites**. Blocking only stops notifications; you can still visit the website.
 
 When suspicious websites are allowed to notify you, the banner at the top of Notify Scout turns orange and says how many.
+
+#### History & Undo: seeing and reversing what Notify Scout did
+
+Nothing Notify Scout does is permanent. Click **History & Undo** on the Home tab (it is also in the Website Cleanup window and the tray icon's menu). It lists everything that is turned off right now:
+
+- websites blocked from sending notifications (every blocked website is shown, including any blocked before Notify Scout)
+- apps whose notifications Notify Scout switched off
+- pop-up windows Notify Scout closes on sight
+
+The **When** column shows the date and time Notify Scout made each change. Tick anything you want back and click **Turn the ticked ones back on**. **Tick all** followed by that button puts everything back the way it was.
+
+Every change is also written to the log file as a line marked CHANGE BY NOTIFY SCOUT.
 
 #### If a fake virus warning takes over the whole screen
 
